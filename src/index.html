@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
@@ -12,176 +12,154 @@
   </head>
 
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="get"
+    >
       <fieldset class="group">
         <legend>Personal information</legend>
-        <label for="surname">
+        <label for="surname" class="block">
           Surname:
           <input
-          type="text"
-          name="surname"
-          id="surname"
-          autocomplete="off"
-          class="fields"
-          required
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+            class="fields"
+            required
           >
         </label>
-        <br>
-        <label for="name">
+        <label for="name" class="block">
           Name:
           <input
-          type="text"
-          name="name"
-          id="name"
-          autocomplete="off"
-          required
-          class="fields"
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            required
+            class="fields"
           >
         </label>
-        <br>
-        <label for="age">
-          How old are you?
+        <label for="age" class="block">
+          How old are You?
           <input
-          type="number"
-          min="1"
-          max="100"
-          value="12"
-          name="age"
-          id="age"
-          class="fields"
+            type="number"
+            min="1"
+            max="100"
+            value="12"
+            name="age"
+            id="age"
+            class="fields"
           >
         </label>
-        <br>
-        <label for="data">
+        <label for="data" class="block">
           Full date of birth:
           <input
-          type="date"
-          name="date"
-          id="data"
-          class="fields"
+            type="date"
+            name="date"
+            id="data"
+            class="fields"
           >
         </label>
-        <br>
-        <label for="consent">I accept the term of the agreement:
+        <label for="consent" class="block">I accept the term of the agreement
           <input
-          type="checkbox"
-          name="consent"
-          id="consent"
-          class="fields"
+            type="checkbox"
+            name="consent"
+            id="consent"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>Registration</legend>
-        <label for="email">E-mail:
+        <label for="email" class="block">E-mail:
           <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email@example.com"
-          class="fields"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            class="fields"
           >
         </label>
-        <br>
-        <label for="password">Password:
+        <label for="password" class="block">Password:
           <input
-          type="password"
-          name="password"
-          id="password"
-          minlength="8"
-          class="fields"
+            type="password"
+            name="password"
+            id="password"
+            minlength="8"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-        <div class="fields">
-          Do you love cats?
-          <label for="yes">
-            <input
+        <label for="yes no" class="block">Do you love cats?
+          <input
             type="radio"
             name="question"
             id="yes"
             value="yes"
-            >Yes
-          </label>
-          <label for="no">
-            <input
+            class="fields"
+          > Yes
+          <input
             type="radio"
             name="question"
             id="no"
             value="no"
-            >No
-          </label>
-        </div>
-        <label for="color">
+            class="fields"
+          > No
+        </label>
+        <label for="color" class="block">
           What is your favorite color?
           <input
-          type="color"
-          name="color"
-          id="color"
-          class="fields"
+            type="color"
+            name="color"
+            id="color"
+            class="fields"
           >
         </label>
-        <br>
-        <label for="sleep">
+        <label for="sleep" class="block">
           What time do you go to bed?
           <input
-          class="fields"
-          type="time"
-          name="sleep"
-          id="sleep"
+            type="time"
+            name="sleep"
+            id="sleep"
+            class="fields"
           >
         </label>
-        <br>
-        <label for="cars">
+        <label for="cars" class="block">
           What are your favorite brand of cars?
           <select
-          class="fields"
-          name="cars"
-          id="cars"
-          multiple
+            class="fields"
+            name="cars"
+            id="cars"
+            multiple
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
         </label>
-        <br>
-        <label for="rateOurWork">
+        <label for="rateOurWork" class="block">
           How do you rate our work?
           <input
-          type="range"
-          name="rateOurWork"
-          id="rateOurWork"
-          min="0"
-          max="10"
-          step="1"
-          value="0"
-          class="fields"
+            type="range"
+            name="rateOurWork"
+            id="rateOurWork"
+            min="0"
+            max="10"
+            step="1"
+            value="0"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>Additional info:</legend>
-        <label for="comment" class="fields">
+        <label for="comments" class="block">
           Comments:
-          <textarea
-          name="comment"
-          id="comment"
-          cols="17"
-          rows="2"
-          >
-          </textarea>
+          <textarea class="fields" name="comments"></textarea>
         </label>
-        <br>
-        <label>Would you recommend us?
-          <select
-          class="fields"
-          name="recommend"
-          >
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+        <label class="block">Would you recommend us?
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>

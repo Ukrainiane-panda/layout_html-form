@@ -2,6 +2,10 @@
   margin-bottom: 20px;
 }
 
+.block {
+  display: block;
+}
+
 .fields {
   margin-bottom: 10px;
 }
