@@ -17,18 +17,17 @@
     >
       <fieldset class="group">
         <legend>Personal information</legend>
-        <label for="surname" class="block">
+        <label for="surname" class="block fields">
           Surname:
           <input
             type="text"
             name="surname"
             id="surname"
             autocomplete="off"
-            class="fields"
             required
           >
         </label>
-        <label for="name" class="block">
+        <label for="name" class="block fields">
           Name:
           <input
             type="text"
@@ -36,10 +35,9 @@
             id="name"
             autocomplete="off"
             required
-            class="fields"
           >
         </label>
-        <label for="age" class="block">
+        <label for="age" class="block fields">
           How old are You?
           <input
             type="number"
@@ -48,16 +46,14 @@
             value="12"
             name="age"
             id="age"
-            class="fields"
           >
         </label>
-        <label for="data" class="block">
+        <label for="data" class="block fields">
           Full date of birth:
           <input
             type="date"
             name="date"
             id="data"
-            class="fields"
           >
         </label>
         <label for="consent" class="block">I accept the term of the agreement
@@ -70,13 +66,12 @@
       </fieldset>
       <fieldset class="group">
         <legend>Registration</legend>
-        <label for="email" class="block">E-mail:
+        <label for="email" class="block fields">E-mail:
           <input
             type="email"
             name="email"
             id="email"
             placeholder="email@example.com"
-            class="fields"
           >
         </label>
         <label for="password" class="block">Password:
@@ -90,44 +85,40 @@
       </fieldset>
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-        <label for="yes no" class="block">Do you love cats?
+        <label for="yes no" class="block fields">
+          Do you love cats?
           <input
             type="radio"
             name="question"
             id="yes"
             value="yes"
-            class="fields"
           > Yes
           <input
             type="radio"
             name="question"
             id="no"
             value="no"
-            class="fields"
           > No
         </label>
-        <label for="color" class="block">
+        <label for="color" class="block fields">
           What is your favorite color?
           <input
             type="color"
             name="color"
             id="color"
-            class="fields"
           >
         </label>
-        <label for="sleep" class="block">
+        <label for="sleep" class="block fields">
           What time do you go to bed?
           <input
             type="time"
             name="sleep"
             id="sleep"
-            class="fields"
           >
         </label>
-        <label for="cars" class="block">
+        <label for="cars" class="block fields">
           What are your favorite brand of cars?
           <select
-            class="fields"
             name="cars"
             id="cars"
             multiple
@@ -152,9 +143,9 @@
       </fieldset>
       <fieldset class="group">
         <legend>Additional info:</legend>
-        <label for="comments" class="block">
+        <label for="comments" class="block fields">
           Comments:
-          <textarea class="fields" name="comments"></textarea>
+          <textarea name="comments"></textarea>
         </label>
         <label class="block">Would you recommend us?
           <select name="recommend">
